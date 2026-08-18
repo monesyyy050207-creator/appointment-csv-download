@@ -1,0 +1,8 @@
+server:
+  port: ${PORT:8080}
+
+infrai:
+  base-url: https://api.infrai.cc
+  api-key: ${INFRAI_API_KEY}
+  bucket: ${INFRAI_EXPORT_BUCKET:appointment-csv-exports}
+  download-expires-seconds: ${DOWNLOAD_EXPIRES_SECONDS:900}

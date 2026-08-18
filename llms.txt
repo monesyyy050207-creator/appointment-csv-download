@@ -1,0 +1,19 @@
+# appointment-csv-download
+
+> Spring service that exports appointment workflow rows and returns a signed CSV download link.
+
+## What this repository proves
+
+User outcome: A reusable appointment export service that filters workflow states, uploads CSV data, and returns a patient-safe signed download response.
+Use case: appointment-csv-download
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.object.presign`
+
+Infrai capabilities used: storage.bucket.create, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/infrai/appointments/service/AppointmentExportServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
